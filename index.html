@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AURA - Inovação e Alma</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        /* VARIÁVEIS GLOBAIS */
+       /* VARIÁVEIS GLOBAIS */
         :root {
             --black-bg: #0d0d0d;
             --dark-grey-bg: #1a1a1a;
@@ -23,6 +25,10 @@
             /* Degradê EXCLUSIVAMENTE Rosa */
             --aura-gradient: linear-gradient(90deg, var(--pink-accent), var(--light-pink));
             --subtle-gradient: linear-gradient(45deg, rgba(255, 0, 136, 0.1), rgba(255, 77, 166, 0.1));
+            
+            /* NOVAS FONTES */
+            --font-heading: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
         }
 
         * {
@@ -32,7 +38,7 @@
         }
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: var(--font-body); /* Fonte principal alterada */
             background-color: var(--black-bg);
             color: var(--text-color);
             line-height: 1.6;
@@ -196,8 +202,7 @@
             display: flex;
             align-items: center;
             font-size: 1.8em;
-            font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-heading); /* Fonte de título */
         }
 
         .logo-icon {
@@ -211,6 +216,17 @@
             transform: rotateY(180deg);
         }
 
+        .logo-img {
+            width: 40px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
+            margin-right: 12px;
+            transition: transform 0.4s ease-out;
+        }
+
+        .logo-link {
+            text-decoration: none;
+        }
+
         /* Aplica o degradê ao texto "AURA" */
         .gradient-text {
             background: var(--aura-gradient);
@@ -219,6 +235,8 @@
             background-clip: text;
             color: transparent; /* Fallback for non-webkit browsers */
             transition: all 0.3s ease;
+            font-family: var(--font-heading); /* Fonte de título */
+            font-weight: 700;
         }
         .gradient-text:hover {
             filter: brightness(1.2);
@@ -261,7 +279,7 @@
             padding: 5px 0;
             position: relative;
             transition: color 0.3s ease, transform 0.3s ease;
-            font-family: 'Open Sans', sans-serif;
+            font-family: var(--font-body); /* Fonte de corpo */
         }
 
         .nav-item::after {
@@ -296,7 +314,7 @@
             transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
             border: none;
             cursor: pointer;
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-heading); /* Fonte de título/botão */
             box-shadow: 0 4px 10px rgba(255, 0, 136, 0.2);
         }
 
@@ -363,11 +381,12 @@
         }
 
         .hero-content h1 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-heading); /* Fonte de título */
             font-size: 3.5em;
             color: var(--text-color);
             margin-bottom: 20px;
             line-height: 1.2;
+            font-weight: 700;
         }
 
         .hero-content h1 .highlight {
@@ -380,6 +399,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             color: transparent; /* Fallback */
+            font-family: var(--font-heading); /* Fonte de título */
             font-weight: 700;
         }
 
@@ -389,6 +409,7 @@
             color: var(--light-pink);
             margin-bottom: 30px;
             max-width: none;
+            font-weight: 400; /* Peso da fonte Inter */
         }
 
         .cta-buttons {
@@ -400,12 +421,12 @@
             padding: 15px 30px;
             border-radius: 30px;
             font-size: 1em;
-            font-weight: 700;
             text-transform: uppercase;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: none;
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-heading); /* Fonte de título/botão */
+            font-weight: 700;
             text-decoration: none;
             display: inline-block;
         }
@@ -521,14 +542,15 @@
             color: var(--pink-accent);
             font-size: 1.6em;
             margin-bottom: 15px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-heading); /* Fonte de título */
+            font-weight: 700;
         }
 
         .feature-card p {
             color: var(--text-color);
             font-size: 0.95em;
             margin-bottom: 20px;
-            font-family: 'Open Sans', sans-serif;
+            font-family: var(--font-body); /* Fonte de corpo */
         }
 
         .feature-card .sign-up-button {
@@ -587,7 +609,7 @@
         .small-icon-card p {
             margin-bottom: 0;
             font-size: 0.9em;
-            font-family: 'Open Sans', sans-serif;
+            font-family: var(--font-body); /* Fonte de corpo */
         }
 
         .last-card {
@@ -603,14 +625,15 @@
             color: var(--text-color);
             font-size: 1.3em;
             margin-bottom: 10px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-heading); /* Fonte de título */
+            font-weight: 700;
         }
 
         .last-card-description {
             font-size: 0.85em;
             color: var(--light-pink);
             margin-bottom: 20px;
-            font-family: 'Open Sans', sans-serif;
+            font-family: var(--font-body); /* Fonte de corpo */
         }
 
         .last-card .sign-up-button {
@@ -620,19 +643,14 @@
 
         /* Footer Styles - COMPLETAMENTE REVISADO para ser moderno, simples e clean */
         .main-footer {
-            background-color: var(--dark-grey-bg); /* Fundo sutil */
+            background-color: transparent; /* Fundo transparente para integrar com o fundo da página */
             color: var(--text-color);
-            padding: 40px 5%; /* Padding reduzido para ser menos "distante" */
-            margin-top: 80px; /* Reduzida a margem superior para aproximar */
-            border-top: none; /* Removendo a borda superior para um look mais clean */
-            display: flex;
-            flex-direction: column; /* Colunas empilhadas por padrão, flex em desktop */
-            align-items: center;
-            text-align: center;
+            padding: 60px 5%;
+            margin-top: 50px;
+            border-top: 1px solid rgb(145 145 145 / 15%);
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para separar do conteúdo */
         }
 
         .main-footer.appear {
@@ -640,153 +658,108 @@
             transform: translateY(0);
         }
 
-        .footer-content-wrapper {
-            display: flex;
-            flex-direction: column; /* Por padrão, empilhado */
-            align-items: center;
-            max-width: 1000px; /* Largura máxima para controle */
-            width: 100%;
-            gap: 25px; /* Espaço entre os blocos */
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        /* Bloco de Logo e Slogan */
-        .footer-brand-simple {
+        .footer-top {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            text-align: center;
-            margin-bottom: 15px; /* Espaçamento com o próximo bloco */
+            margin-bottom: 40px;
+            flex-wrap: wrap; /* Para responsividade */
+            gap: 20px;
         }
 
-        .footer-logo-simple {
+        .footer-brand {
             display: flex;
             align-items: center;
-            font-size: 2em;
-            font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
-            margin-bottom: 8px; /* Mais próximo do slogan */
+            gap: 12px;
         }
 
-        .footer-logo-img-simple {
-            width: 50px; /* Tamanho da logo reduzido para simplicidade */
+        .footer-logo-img {
+            width: 45px;
             height: auto;
-            margin-right: 10px;
         }
 
-        .footer-slogan-simple {
-            font-size: 0.88em; /* Levemente menor */
-            color: #b0b0b0;
-            line-height: 1.5;
-            max-width: 400px;
+        .footer-brand .gradient-text {
+            font-size: 2em;
+            font-family: var(--font-heading); /* Fonte de título */
+            font-weight: 700;
         }
 
-        /* Links de Navegação e Redes Sociais */
-        .footer-links-social {
+        .footer-nav {
             display: flex;
-            flex-direction: column; /* Empilhados em mobile */
-            align-items: center;
-            gap: 20px; /* Espaço entre navegação e social */
-            margin-bottom: 15px;
+            gap: 30px;
         }
 
-        .footer-nav-simple ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap; /* Permite que os links quebrem linha */
-            justify-content: center;
-            gap: 25px; /* Espaço entre os links */
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer-nav-simple ul li a {
+        .footer-nav a {
             color: var(--text-color);
             text-decoration: none;
-            font-size: 0.9em;
             font-weight: 600;
-            transition: color 0.3s ease, transform 0.2s ease;
-            position: relative;
+            font-size: 0.95em;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
-        .footer-nav-simple ul li a::after {
-            content: '';
-            position: absolute;
-            width: 0%;
-            height: 1px;
-            bottom: -3px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: var(--pink-accent);
-            transition: width 0.3s ease-out;
-        }
-
-        .footer-nav-simple ul li a:hover {
+        .footer-nav a:hover {
             color: var(--pink-accent);
             transform: translateY(-2px);
         }
-        .footer-nav-simple ul li a:hover::after {
-            width: 100%;
-        }
 
-        .social-icons-simple {
+        .footer-bottom {
             display: flex;
-            gap: 15px; /* Espaço entre os ícones */
-            justify-content: center;
-            margin-top: 10px; /* Espaço entre nav e social (se empilhados) */
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        .social-icons-simple a {
-            color: var(--text-color);
-            font-size: 1.3em; /* Tamanho do ícone */
-            transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+        .copyright-text {
+            font-size: 0.85em;
+            color: #999;
         }
 
-        .social-icons-simple a:hover {
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: #999;
+            font-size: 1.4em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
             color: var(--pink-accent);
             transform: translateY(-3px);
-            text-shadow: 0 0 6px var(--pink-accent);
         }
 
-        .footer-bottom-simple {
-            width: 100%;
-            margin-top: 30px; /* Menos margem que o anterior */
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 0, 136, 0.05); /* Borda ainda mais sutil */
-            font-size: 0.78em; /* Fonte bem pequena */
-            color: #777; /* Cor mais suave */
-            text-align: center;
-        }
+        /* Responsividade para o novo rodapé */
+        @media (max-width: 768px) {
+            .footer-top, .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
 
-        /* Responsividade para o NOVO FOOTER */
-        @media (min-width: 769px) { /* A partir de tablet para desktop */
-            .footer-content-wrapper {
-                flex-direction: row; /* Layout horizontal */
-                justify-content: space-between; /* Distribuição espaçada */
-                align-items: flex-start; /* Alinha no topo */
+            .footer-top {
+                gap: 30px;
+                margin-bottom: 30px;
             }
-            .footer-brand-simple {
-                flex: 1; /* Ocupa espaço flexível */
-                align-items: flex-start; /* Alinha à esquerda */
-                text-align: left;
-                margin-bottom: 0;
+
+            .footer-bottom {
+                gap: 20px;
             }
-            .footer-links-social {
-                flex: 1;
-                flex-direction: row; /* Coloca navegação e social na mesma linha */
-                justify-content: flex-end; /* Alinha à direita */
-                gap: 40px; /* Mais espaço entre os grupos de links */
-                margin-bottom: 0;
+
+            .copyright-text {
+                order: 2; /* Coloca o copyright abaixo dos ícones sociais */
             }
-            .footer-nav-simple ul {
-                justify-content: flex-end; /* Alinha links à direita */
-                gap: 30px; /* Mais espaço entre links individuais */
-            }
-            .social-icons-simple {
-                justify-content: flex-end; /* Alinha ícones à direita */
-                margin-top: 0; /* Remove margem superior se estiver na mesma linha da nav */
-            }
-            .footer-bottom-simple {
-                margin-top: 40px; /* Mais margem após os blocos */
+
+            .social-icons {
+                order: 1;
             }
         }
 
@@ -916,10 +889,12 @@
 
     <header class="main-header">
         <nav class="navbar">
-            <div class="logo logo-wrapper"> 
-                <i class="fas fa-cubes logo-icon"></i> 
-                <span class="gradient-text">AURA</span>
-            </div>
+            <a href="index.html" class="logo-link">
+                <div class="logo logo-wrapper">
+                    <img src="assets/logo.png" alt="AURA Logo" class="logo-img">
+                    <span class="gradient-text">AURA</span>
+                </div>
+            </a>
             <div class="hamburger-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -981,33 +956,27 @@
     </main>
 
     <footer class="main-footer fade-in">
-        <div class="footer-content-wrapper">
-            <div class="footer-brand-simple">
-                <div class="footer-logo-simple">
-                    <img src="assets/logo.png" alt="AURA Logo" class="footer-logo-img-simple">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="AURA Logo" class="footer-logo-img">
                     <span class="gradient-text">AURA</span>
                 </div>
-                <p class="footer-slogan-simple">Inovação e Alma em Cada Linha de Código.</p>
-            </div>
-            <div class="footer-links-social">
-                <nav class="footer-nav-simple">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portifolio.html">Projetos</a></li>
-                        <li><a href="#">Sobre Nós</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="portifolio.html">Projetos</a>
+                    <a href="about.html">Sobre Nós</a>
+                    <a href="#">Contato</a>
                 </nav>
-                <div class="social-icons-simple">
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright-text">&copy; 2024 AURA. Inovação e Alma em Cada Linha de Código.</p>
+                <div class="social-icons">
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom-simple">
-            <p>&copy; 2024 AURA. Todos os direitos reservados.</p>
         </div>
     </footer>
 

@@ -1,0 +1,197 @@
+{
+  "projetos": [
+    {
+      "nome": "Projeto Inovação X",
+      "foto": "assets/imgs/Portifolio/project-1.webp",
+      "descricao_curta": "Desenvolvimento de IA para otimização de processos.",
+      "tags": ["IA", "Web", "Otimização"],
+      "descricao": "Uma plataforma de ponta que utiliza inteligência artificial para analisar e otimizar processos empresariais em tempo real, resultando em um aumento de eficiência de até 40%.",
+      "repositorio": "https://github.com/aura/inovacao-x",
+      "site": "https://aura.dev/inovacao-x"
+    },
+    {
+      "nome": "Plataforma AuraConnect",
+      "foto": "assets/imgs/Portifolio/project-2.webp",
+      "descricao_curta": "Experiência de usuário redefinida com design intuitivo.",
+      "tags": ["UX/UI", "SaaS", "Design"],
+      "descricao": "Redefinimos a experiência do usuário nesta plataforma SaaS, com um design totalmente intuitivo e centrado no ser humano, o que diminuiu a curva de aprendizado e aumentou o engajamento do cliente.",
+      "repositorio": "https://github.com/aura/auraconnect",
+      "site": ""
+    },
+    {
+      "nome": "App Sentido Urbano",
+      "foto": "assets/imgs/Portifolio/project-3.webp",
+      "descricao_curta": "Aplicativo móvel para conexão comunitária e eventos locais.",
+      "tags": ["Mobile", "Comunidade"],
+      "descricao": "Um aplicativo móvel vibrante que conecta pessoas a eventos e iniciativas locais, fortalecendo o senso de comunidade e promovendo a cultura da cidade. Desenvolvido com uma interface fluida e amigável.",
+      "repositorio": "",
+      "site": "https://aura.dev/sentido-urbano"
+    },
+    {
+      "nome": "Gestão Quantum",
+      "foto": "assets/imgs/Portifolio/project-4.webp",
+      "descricao_curta": "Solução empresarial com foco em eficiência e segurança.",
+      "tags": ["Enterprise", "Backend"],
+      "descricao": "",
+      "repositorio": "https://github.com/aura/quantum",
+      "site": "https://aura.dev/quantum"
+    },
+    {
+      "nome": "Interface Holográfica",
+      "foto": "assets/imgs/Portifolio/project-5.webp",
+      "descricao_curta": "Explorando a realidade aumentada para interações futuristas.",
+      "tags": ["AR", "Design", "Inovação"],
+      "descricao": "Um projeto experimental que explora o futuro das interfaces, utilizando realidade aumentada para criar interações holográficas imersivas e nunca antes vistas.",
+      "repositorio": "https://github.com/aura/ar-hologram",
+      "site": "https://aura.dev/ar-hologram"
+    },
+    {
+      "nome": "Game Dev - Elysium",
+      "foto": "assets/imgs/Portifolio/project-6.webp",
+      "descricao_curta": "Um mundo imersivo onde a narrativa encontra a tecnologia.",
+      "tags": ["Games", "3D", "Unreal Engine"],
+      "descricao": "Mergulhe em Elysium, um mundo de fantasia épico onde a narrativa profunda encontra a tecnologia de ponta da Unreal Engine 5 para criar uma experiência de jogo inesquecível.",
+      "repositorio": "https://github.com/aura/elysium-game",
+      "site": "https://elysiumgame.com"
+    }
+  ],
+
+  "equipe": [
+    {
+      "id": "luisa-vera",
+      "nome": "Luisa Vera",
+      "cargo": "Direção",
+      "foto": "assets/imgs/equipe/LuisaVera.png",
+      "github": "https://github.com/luisavera",
+      "sobre": "Líder visionária com foco em estratégia de produto e inovação. Apaixonada por unir design e tecnologia para criar soluções que impactam positivamente a vida das pessoas.",
+      "ingressou": "2023-01-15",
+      "redes_sociais": {
+        "linkedin": "https://linkedin.com/in/luisavera",
+        "instagram": "https://instagram.com/luisavera"
+      }
+    },
+    {
+      "id": "luisa-venturi",
+      "nome": "Luisa Venturi",
+      "cargo": "Direção",
+      "foto": "assets/imgs/equipe/luisaventuri.png",
+      "github": "https://github.com/luisaventuri",
+      "sobre": "Especialista em operações e gestão de projetos. Garante que a visão da AURA se transforme em realidade, mantendo a equipe alinhada e os projetos no prazo com excelência.",
+      "ingressou": "2023-01-20",
+      "redes_sociais": {
+        "linkedin": "https://linkedin.com/in/luisaventuri",
+        "instagram": null
+      }
+    },
+    {
+      "id": "joao-augusto",
+      "nome": "João Augusto",
+      "cargo": "Desenvolvedor Full-Stack",
+      "foto": "assets/imgs/equipe/joaoaugusto.png",
+      "github": "https://github.com/joaoaugusto",
+      "sobre": "Arquiteto de software com um talento especial para criar sistemas robustos e escaláveis. Transforma ideias complexas em código limpo e eficiente.",
+      "ingressou": "2023-03-10",
+      "redes_sociais": {
+        "linkedin": "https://linkedin.com/in/joaoaugusto",
+        "github": "https://github.com/joaoaugusto"
+      }
+    },
+    {
+      "id": "gabrielly-oliveira",
+      "nome": "Gabrielly Oliveira",
+      "cargo": "UI/UX Designer",
+      "foto": "assets/imgs/equipe/gaby.jfif",
+      "github": null,
+      "sobre": "A alma criativa por trás das interfaces da AURA. Focada em criar experiências de usuário intuitivas, bonitas e memoráveis, sempre com um toque humano.",
+      "ingressou": "2023-04-01",
+      "redes_sociais": {
+        "linkedin": "https://linkedin.com/in/gabriellyoliveira",
+        "instagram": "https://instagram.com/gabyoliveira"
+      }
+    },
+    {
+      "id": "guilherme-silvestre",
+      "nome": "Guilherme Silvestre",
+      "cargo": "Engenheiro de Front-end",
+      "foto": "assets/imgs/equipe/guilherme.jpg",
+      "github": "https://github.com/guilhermesilvestre",
+      "sobre": "Mestre em dar vida aos designs com animações fluidas e interações perfeitas. Especialista em JavaScript e frameworks modernos.",
+      "ingressou": "2023-05-22",
+      "redes_sociais": {
+        "linkedin": "https://linkedin.com/in/guilhermesilvestre",
+        "instagram": null
+      }
+    },
+    {
+      "id": "maria-silva",
+      "nome": "Maria",
+      "cargo": "Desenvolvedora Back-end",
+      "foto": "assets/imgs/equipe/maria.png",
+      "github": "https://github.com/mariasilva",
+      "sobre": "Especialista em APIs e bancos de dados, garantindo que a lógica do sistema seja segura, rápida e confiável. Peça fundamental da nossa infraestrutura.",
+      "ingressou": "2023-06-15",
+      "redes_sociais": {
+        "linkedin": null,
+        "instagram": null
+      }
+    },
+    {
+      "id": "ana-julia",
+      "nome": "Ana Julía",
+      "cargo": "Analista de QA",
+      "foto": "assets/imgs/equipe/anajulia.jfif",
+      "github": null,
+      "sobre": "Nossos olhos para a qualidade. Responsável por garantir que cada produto lançado pela AURA seja livre de bugs e atenda aos mais altos padrões de excelência.",
+      "ingressou": "2023-07-01",
+      "redes_sociais": {
+        "linkedin": "https://linkedin.com/in/anajulia",
+        "instagram": null
+      }
+    },
+    {
+      "id": "rafael-costa",
+      "nome": "Rafael",
+      "cargo": "Engenheiro DevOps",
+      "foto": "assets/imgs/equipe/rafael.png",
+      "github": "https://github.com/rafaelcosta",
+      "sobre": "O mestre da automação e da infraestrutura. Garante que nossos sistemas estejam sempre no ar, escalando de forma eficiente e com segurança máxima.",
+      "ingressou": "2023-08-11",
+      "redes_sociais": {
+        "linkedin": "https://linkedin.com/in/rafaelcosta",
+        "instagram": null
+      }
+    },
+    {
+      "id": "joao-victor",
+      "nome": "João Victor",
+      "cargo": "Desenvolvedor Mobile",
+      "foto": "assets/imgs/equipe/joaovictor.png",
+      "github": "https://github.com/joaovictor",
+      "sobre": "Transforma nossas ideias em aplicativos fluidos e responsivos para iOS e Android. Focado em performance e experiência nativa.",
+      "ingressou": "2023-09-05",
+      "redes_sociais": {
+        "linkedin": "https://linkedin.com/in/joaovictor",
+        "instagram": "https://instagram.com/joaovictor"
+      }
+    },
+    {
+      "id": "enzo-bueno",
+      "nome": "Enzo Bueno",
+      "cargo": "Cientista de Dados",
+      "foto": "assets/imgs/equipe/enzo.png",
+      "github": "https://github.com/enzobueno",
+      "sobre": "Extrai insights valiosos de grandes volumes de dados. Ajuda a AURA a tomar decisões inteligentes e a criar produtos com base em evidências.",
+      "ingressou": "2023-10-20",
+      "redes_sociais": {
+        "linkedin": null,
+        "instagram": null
+      }
+    }
+  ]
+
+
+  
+
+
+
+}
