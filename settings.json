@@ -1,13 +1,13 @@
 {
   "projetos": [
     {
-      "nome": "Projeto Inovação X",
-      "foto": "assets/imgs/Portifolio/project-1.webp",
-      "descricao_curta": "Desenvolvimento de IA para otimização de processos.",
-      "tags": ["IA", "Web", "Otimização"],
-      "descricao": "Uma plataforma de ponta que utiliza inteligência artificial para analisar e otimizar processos empresariais em tempo real, resultando em um aumento de eficiência de até 40%.",
-      "repositorio": "https://github.com/aura/inovacao-x",
-      "site": "https://aura.dev/inovacao-x"
+      "nome": "GYM Rats",
+      "foto": "assets/imgs/Portifolio/gymrats.png",
+      "descricao_curta": "O Gym Rats é a sua solução completa para transformar sua jornada fitness.",
+      "tags": ["IA", "WebSite", "Otimização"],
+      "descricao": "Oferecemos treinos personalizados, monitoramento de execução com IA, controle de descanso e acompanhamento de progresso, tudo para você alcançar seus objetivos com segurança e eficiência.",
+      "repositorio": "https://github.com/EquipeGymRats/inicio",
+      "site": "https://equipegymrats.github.io/inicio/"
     },
     {
       "nome": "Plataforma AuraConnect",
