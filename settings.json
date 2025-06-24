@@ -2,7 +2,7 @@
   "projetos": [
     {
       "nome": "GYM Rats",
-      "foto": "assets/imgs/Portifolio/gymrats.png",
+      "foto": "assets/imgs/Portifolio/Gymrats.png",
       "descricao_curta": "O Gym Rats é a sua solução completa para transformar sua jornada fitness.",
       "tags": ["IA", "WebSite", "Otimização"],
       "descricao": "Oferecemos treinos personalizados, monitoramento de execução com IA, controle de descanso e acompanhamento de progresso, tudo para você alcançar seus objetivos com segurança e eficiência.",
@@ -10,17 +10,17 @@
       "site": "https://equipegymrats.github.io/inicio/"
     },
     {
-      "nome": "Plataforma AuraConnect",
-      "foto": "assets/imgs/Portifolio/project-2.webp",
-      "descricao_curta": "Experiência de usuário redefinida com design intuitivo.",
-      "tags": ["UX/UI", "SaaS", "Design"],
-      "descricao": "Redefinimos a experiência do usuário nesta plataforma SaaS, com um design totalmente intuitivo e centrado no ser humano, o que diminuiu a curva de aprendizado e aumentou o engajamento do cliente.",
-      "repositorio": "https://github.com/aura/auraconnect",
-      "site": ""
+      "nome": "Baú da Merenda",
+      "foto": "assets/imgs/Portifolio/baudamerenda.png",
+      "descricao_curta": "O desperdício de merenda escolar causada pela produção superestimada nas escolas.",
+      "tags": ["UX/UI", "Escola", "Design"],
+      "descricao": "O projeto 'Baú da Merenda' implementa um dispositivo lúdico e interativo de contagem de alunos, com o objetivo de otimizar o preparo e eliminar o desperdício da merenda escolar.",
+      "repositorio": "https://github.com/etrinova/bau",
+      "site": "https://etrinova.github.io/bau/"
     },
     {
       "nome": "App Sentido Urbano",
-      "foto": "assets/imgs/Portifolio/project-3.webp",
+      "foto": "assets/imgs/Portifolio/placeholder.webp",
       "descricao_curta": "Aplicativo móvel para conexão comunitária e eventos locais.",
       "tags": ["Mobile", "Comunidade"],
       "descricao": "Um aplicativo móvel vibrante que conecta pessoas a eventos e iniciativas locais, fortalecendo o senso de comunidade e promovendo a cultura da cidade. Desenvolvido com uma interface fluida e amigável.",
@@ -29,7 +29,7 @@
     },
     {
       "nome": "Gestão Quantum",
-      "foto": "assets/imgs/Portifolio/project-4.webp",
+      "foto": "assets/imgs/Portifolio/placeholder.webp",
       "descricao_curta": "Solução empresarial com foco em eficiência e segurança.",
       "tags": ["Enterprise", "Backend"],
       "descricao": "",
@@ -38,7 +38,7 @@
     },
     {
       "nome": "Interface Holográfica",
-      "foto": "assets/imgs/Portifolio/project-5.webp",
+      "foto": "assets/imgs/Portifolio/placeholder.webp",
       "descricao_curta": "Explorando a realidade aumentada para interações futuristas.",
       "tags": ["AR", "Design", "Inovação"],
       "descricao": "Um projeto experimental que explora o futuro das interfaces, utilizando realidade aumentada para criar interações holográficas imersivas e nunca antes vistas.",
@@ -47,7 +47,7 @@
     },
     {
       "nome": "Game Dev - Elysium",
-      "foto": "assets/imgs/Portifolio/project-6.webp",
+      "foto": "assets/imgs/Portifolio/placeholder.webp",
       "descricao_curta": "Um mundo imersivo onde a narrativa encontra a tecnologia.",
       "tags": ["Games", "3D", "Unreal Engine"],
       "descricao": "Mergulhe em Elysium, um mundo de fantasia épico onde a narrativa profunda encontra a tecnologia de ponta da Unreal Engine 5 para criar uma experiência de jogo inesquecível.",
