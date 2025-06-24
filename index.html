@@ -20,7 +20,7 @@
             --text-color: #e0e0e0;
             --button-bg: #FF0088;
             --button-hover-bg: #CC0070;
-            --card-bg: #1a1a1a;
+            --card-bg: rgba(26, 26, 26, 0.5); /* Alterado para ter transparência */
             --border-color: #333;
             /* Degradê EXCLUSIVAMENTE Rosa */
             --aura-gradient: linear-gradient(90deg, var(--pink-accent), var(--light-pink));
@@ -495,23 +495,20 @@
             align-items: stretch;
         }
 
-    .feature-card {
-        /* As propriedades existentes estão ótimas */
-        background-color: var(--card-bg);
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        border: 1px solid var(--border-color);
-        text-align: left;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        /* ADICIONE ESTAS DUAS LINHAS PARA O EFEITO DE VIDRO */
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
-    }
+        .feature-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
+        }
 
         .feature-card:hover {
             transform: translateY(-5px);
@@ -717,32 +714,196 @@
             color: var(--pink-accent);
             transform: translateY(-3px);
         }
+        
+        /* ================================================================ */
+        /* ====== ESTILOS PARA AS NOVAS SEÇÕES DE CONTEÚDO EM DESTAQUE ====== */
+        /* ================================================================ */
 
-        /* Responsividade para o novo rodapé */
-        @media (max-width: 768px) {
-            .footer-top, .footer-bottom {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .footer-top {
-                gap: 30px;
-                margin-bottom: 30px;
-            }
-
-            .footer-bottom {
-                gap: 20px;
-            }
-
-            .copyright-text {
-                order: 2; /* Coloca o copyright abaixo dos ícones sociais */
-            }
-
-            .social-icons {
-                order: 1;
-            }
+        .featured-content-section {
+            padding: 80px 5%;
+            max-width: 1200px;
+            margin: 40px auto;
+            position: relative;
+            z-index: 1;
+            background-color: rgba(26, 26, 26, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 0, 136, 0.2);
         }
 
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-heading);
+            font-size: 2.8em;
+            color: var(--pink-accent);
+            margin-bottom: 15px;
+            position: relative;
+            font-weight: 700;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--aura-gradient);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: var(--text-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Grade de Projetos em Destaque */
+        .featured-projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card-featured {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .project-card-featured:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 0, 136, 0.2);
+        }
+
+        .project-card-featured .project-image-container {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .project-card-featured .project-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .project-card-featured:hover .project-image-container img {
+            transform: scale(1.05);
+        }
+
+        .project-info-featured {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-info-featured h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5em;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .project-info-featured p {
+            font-size: 0.95em;
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .project-tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: auto;
+        }
+
+        .project-tag {
+            background-color: rgba(255, 0, 136, 0.15);
+            border: 1px solid rgba(255, 0, 136, 0.3);
+            color: var(--light-pink);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 700;
+        }
+
+        /* Teaser 'Sobre Nós' */
+        .about-teaser-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .team-avatar-grid {
+            display: flex;
+            justify-content: center;
+            padding-left: 50px; /* Espaço para o overlap */
+        }
+
+        .team-avatar-item {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--pink-accent);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin-left: -50px;
+            position: relative; 
+            transform: translateY(0);
+transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+            animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+            animation-delay: var(--delay);
+        }
+
+        .team-avatar-grid:hover .team-avatar-item {
+            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+            z-index: 1;
+        }
+
+        .team-avatar-item:hover {
+            transform: translateY(-10px);
+            z-index: 10;
+        }
+
+        a.team-avatar-item.more-avatars {
+            background-color: var(--pink-accent);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 1.8em;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a.team-avatar-item.more-avatars:hover{
+             background-color: var(--light-pink);
+        }
+
+        /* Botão de Call-to-Action da Seção */
+        .section-cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        /* RESPONSIVIDADE */
         @media (max-width: 768px) {
             /* Header em mobile */
             .main-header {
@@ -791,6 +952,27 @@
             }
             .footer-links-social {
                 gap: 15px; /* Reduzido gap entre links e social */
+            }
+            .footer-top, .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-top {
+                gap: 30px;
+                margin-bottom: 30px;
+            }
+
+            .footer-bottom {
+                gap: 20px;
+            }
+
+            .copyright-text {
+                order: 2; /* Coloca o copyright abaixo dos ícones sociais */
+            }
+
+            .social-icons {
+                order: 1;
             }
         }
 
@@ -923,6 +1105,81 @@
                     <p class="last-card-description">Desafie o status quo conosco. Sua visão, nossa paixão.</p>
                     <a href="#" class="sign-up-button">Vamos Conversar</a>
                 </div>
+            </div>
+        </section>
+
+        <section class="featured-content-section fade-in">
+            <div class="section-header">
+                <h2>Conheça Nossas Inovações</h2>
+                <p>Estes são alguns dos desafios que transformamos em realidade. Cada projeto é uma história de paixão e engenharia de ponta.</p>
+            </div>
+            <div class="featured-projects-grid">
+                <div class="project-card-featured">
+                    <div class="project-image-container">
+                        <img src="assets/imgs/Portifolio/Gymrats.png" alt="Projeto Gym Rats">
+                    </div>
+                    <div class="project-info-featured">
+                        <h3>GYM Rats</h3>
+                        <p>Uma solução completa com IA para transformar e personalizar a jornada fitness dos usuários.</p>
+                        <div class="project-tags-container">
+                            <span class="project-tag">IA</span>
+                            <span class="project-tag">WebSite</span>
+                            <span class="project-tag">Otimização</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="project-card-featured">
+                    <div class="project-image-container">
+                        <img src="assets/imgs/Portifolio/baudamerenda.png" alt="Projeto Baú da Merenda">
+                    </div>
+                    <div class="project-info-featured">
+                        <h3>Baú da Merenda</h3>
+                        <p>Dispositivo lúdico e interativo para otimizar o preparo e eliminar o desperdício da merenda escolar.</p>
+                        <div class="project-tags-container">
+                            <span class="project-tag">UX/UI</span>
+                            <span class="project-tag">Escola</span>
+                            <span class="project-tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="project-card-featured">
+                    <div class="project-image-container">
+                        <img src="assets/imgs/Portifolio/placeholder.webp" alt="Projeto Interface Holográfica">
+                    </div>
+                    <div class="project-info-featured">
+                        <h3>Interface Holográfica</h3>
+                        <p>Explorando a realidade aumentada para criar interações futuristas, imersivas e nunca antes vistas.</p>
+                        <div class="project-tags-container">
+                            <span class="project-tag">AR</span>
+                            <span class="project-tag">Inovação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="portifolio.html" class="learn-more-button">Ver todos os projetos</a>
+            </div>
+        </section>
+        
+        <section class="featured-content-section fade-in">
+            <div class="section-header">
+                <h2>A Alma por Trás do Código</h2>
+                <p>Acreditamos que um pequeno time de "A-Players" pode superar um exército. Conheça as mentes apaixonadas que dão vida à AURA.</p>
+            </div>
+            <div class="about-teaser-container">
+                <div class="team-avatar-grid">
+                    <img src="assets/imgs/equipe/LuisaVera.png" alt="Membro da equipe 1" class="team-avatar-item" style="--delay: 0s;">
+                    <img src="assets/imgs/equipe/luisaventuri.png" alt="Membro da equipe 2" class="team-avatar-item" style="--delay: 0.1s;">
+                    <img src="assets/imgs/equipe/joaoaugusto.png" alt="Membro da equipe 3" class="team-avatar-item" style="--delay: 0.2s;">
+                    <img src="assets/imgs/equipe/gaby.jfif" alt="Membro da equipe 4" class="team-avatar-item" style="--delay: 0.3s;">
+                    <img src="assets/imgs/equipe/guilherme.jpg" alt="Membro da equipe 5" class="team-avatar-item" style="--delay: 0.4s;">
+                    <a href="about.html" class="team-avatar-item more-avatars" style="--delay: 0.5s;">+5</a>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="about.html" class="learn-more-button">Conheça nossa equipe</a>
             </div>
         </section>
     </main>
