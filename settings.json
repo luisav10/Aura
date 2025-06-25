@@ -19,13 +19,13 @@
       "site": "https://etrinova.github.io/bau/"
     },
     {
-      "nome": "App Sentido Urbano",
-      "foto": "assets/imgs/Portifolio/placeholder.webp",
-      "descricao_curta": "Aplicativo móvel para conexão comunitária e eventos locais.",
-      "tags": ["Mobile", "Comunidade"],
-      "descricao": "Um aplicativo móvel vibrante que conecta pessoas a eventos e iniciativas locais, fortalecendo o senso de comunidade e promovendo a cultura da cidade. Desenvolvido com uma interface fluida e amigável.",
+      "nome": "PersonalTec",
+      "foto": "assets/imgs/Portifolio/personaltec.png",
+      "descricao_curta": "Personal Trainel com IA para otimizar sua rotina de treinos.",
+      "tags": ["IA", "Treino", "Fitness"],
+      "descricao": "Seu personal trainer digital que vai com você para onde for, direto no seu fone. Seu corpo, suas regras, nossos resultados!",
       "repositorio": "",
-      "site": "https://aura.dev/sentido-urbano"
+      "site": "https://personaltec-25d3c.web.app"
     },
     {
       "nome": "Gestão Quantum",
@@ -34,7 +34,8 @@
       "tags": ["Enterprise", "Backend"],
       "descricao": "",
       "repositorio": "https://github.com/aura/quantum",
-      "site": "https://aura.dev/quantum"
+      "site": "https://aura.dev/quantum",
+      "coming_soon": true
     },
     {
       "nome": "Interface Holográfica",
@@ -43,7 +44,8 @@
       "tags": ["AR", "Design", "Inovação"],
       "descricao": "Um projeto experimental que explora o futuro das interfaces, utilizando realidade aumentada para criar interações holográficas imersivas e nunca antes vistas.",
       "repositorio": "https://github.com/aura/ar-hologram",
-      "site": "https://aura.dev/ar-hologram"
+      "site": "https://aura.dev/ar-hologram",
+      "coming_soon": true
     },
     {
       "nome": "Game Dev - Elysium",
@@ -52,7 +54,8 @@
       "tags": ["Games", "3D", "Unreal Engine"],
       "descricao": "Mergulhe em Elysium, um mundo de fantasia épico onde a narrativa profunda encontra a tecnologia de ponta da Unreal Engine 5 para criar uma experiência de jogo inesquecível.",
       "repositorio": "https://github.com/aura/elysium-game",
-      "site": "https://elysiumgame.com"
+      "site": "https://elysiumgame.com",
+      "coming_soon": true
     }
   ],
 
