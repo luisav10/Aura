@@ -2,7 +2,7 @@
   "projetos": [
     {
       "nome": "GYM Rats",
-      "foto": "assets/imgs/Portifolio/Gymrats.png",
+      "foto": "assets/imgs/Portifolio/gymrats.png",
       "descricao_curta": "O Gym Rats é a sua solução completa para transformar sua jornada fitness.",
       "tags": ["IA", "WebSite", "Otimização"],
       "descricao": "Oferecemos treinos personalizados, monitoramento de execução com IA, controle de descanso e acompanhamento de progresso, tudo para você alcançar seus objetivos com segurança e eficiência.",
