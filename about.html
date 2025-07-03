@@ -88,12 +88,45 @@
         .philosophy-intro { font-size: 1.15em; line-height: 1.8; color: var(--text-color); margin-bottom: 50px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; }
         .philosophy-intro strong { color: var(--light-pink); }
         .soul-formula { display: flex; justify-content: center; align-items: center; gap: 25px; margin: 70px auto; padding: 35px; background: linear-gradient(45deg, rgba(255, 0, 136, 0.1), transparent); border-radius: 25px; border: 1px solid var(--pink-accent); box-shadow: 0 0 35px rgba(255, 0, 136, 0.4); max-width: 900px; flex-wrap: wrap; }
-        .formula-item { display: flex; flex-direction: column; align-items: center; font-family: var(--font-heading); font-size: 1.8em; color: var(--text-color); text-align: center; font-weight: 700; }
-        .formula-item i { font-size: 3em; color: var(--light-pink); margin-bottom: 10px; filter: drop-shadow(0 0 10px rgba(255, 0, 136, 0.8)); transition: transform 0.4s var(--animation-curve); }
+        .formula-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: var(--font-heading);
+            font-size: 1.5em; /* Reduzido de 1.8em para o texto principal */
+            color: var(--text-color);
+            text-align: center;
+            font-weight: 700;
+        }
+        .formula-item i {
+            font-size: 2.5em; /* Reduzido de 3em para o ícone */
+            color: var(--light-pink);
+            margin-bottom: 5px; /* Reduzido de 10px */
+            filter: drop-shadow(0 0 10px rgba(255, 0, 136, 0.8));
+            transition: transform 0.4s var(--animation-curve);
+        }
         .formula-item:hover i { transform: scale(1.15); }
         .formula-plus, .formula-equals { font-size: 3em; color: var(--pink-accent); font-weight: 700; margin: 0 15px; font-family: var(--font-heading); }
         
-        .philosophy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; margin-top: 50px; }
+        /* NOVO ESTILO PARA A FRASE "Impacto e Inovação" */
+        .formula-item .tagline {
+            font-size: 0.6em; /* Ainda menor */
+            color: var(--light-pink);
+            font-family: var(--font-body);
+            font-weight: 400;
+            margin-top: 0px; /* Margem superior reduzida para compactar */
+            text-transform: uppercase;
+            letter-spacing: 0.5px; /* Espaçamento entre letras reduzido */
+            line-height: 1.1; /* Altura da linha ajustada para compactar */
+            white-space: nowrap; /* Tenta manter o texto em uma única linha */
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajustado min-width para 220px */
+            gap: 25px; /* Reduzido o gap de 35px para 25px */
+            margin-top: 50px;
+        }
         .philosophy-card { background-color: var(--card-bg); border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center; transition: transform 0.4s var(--animation-curve), box-shadow 0.4s var(--animation-curve); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; position: relative; overflow: hidden; z-index: 1; border: 1px solid transparent; }
         .philosophy-card::before { content: ""; position: absolute; z-index: -1; left: -50%; top: -50%; width: 200%; height: 200%; background-color: var(--pink-accent); background-repeat: no-repeat; background-position: 0 0; background-image: conic-gradient(transparent, var(--light-pink), transparent 30%); animation: spin 4s linear infinite; opacity: 0; transition: opacity 0.5s var(--animation-curve); }
         .philosophy-card::after { content: ""; position: absolute; z-index: -2; left: 1px; top: 1px; width: calc(100% - 2px); height: calc(100% - 2px); background: var(--card-bg); border-radius: 14px; }
@@ -172,32 +205,90 @@
         .animate-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
         
         /* FOOTER */
-        .main-footer { background-color: transparent; color: var(--text-color); padding: 60px 5%; margin-top: 80px; border-top: 1px solid rgba(255, 0, 136, 0.15); }
-        .footer-container { max-width: 1200px; margin: 0 auto; }
-        .footer-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 20px; }
-        .footer-brand { display: flex; align-items: center; gap: 12px; }
-        .footer-logo-img { width: 45px; height: auto; }
+        .main-footer {
+            background-color: transparent;
+            color: var(--text-color);
+            padding: 60px 5%;
+            margin-top: 80px;
+            border-top: 1px solid rgba(255, 0, 136, 0.15);
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex; /* Para centralizar o wrapper de conteúdo */
+            justify-content: center;
+            align-items: center;
+        }
+        .footer-content-wrapper { /* NOVO ELEMENTO: Contém logo, copyright e ícones sociais */
+            display: flex;
+            align-items: center; /* Alinha itens verticalmente */
+            justify-content: space-between; /* Empurra logo para esquerda, ícones para direita */
+            width: 100%; /* Garante que ocupe a largura total */
+            flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+            gap: 15px; /* Espaçamento entre os elementos quando quebrarem */
+        }
+
+        /* Removido .footer-top e .footer-bottom pois a estrutura foi consolidada */
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            /* Já estará à esquerda por ser o primeiro item no flex container */
+        }
+        .footer-logo-img { width: 100px; height: auto; }
         .footer-brand .gradient-text { font-size: 2em; font-family: var(--font-heading); font-weight: 700; }
-        .footer-nav { display: flex; gap: 30px; }
-        .footer-nav a { color: var(--text-color); text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
-        .footer-nav a:hover { color: var(--pink-accent); }
-        .footer-bottom { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 30px; flex-wrap: wrap; gap: 15px; }
-        .copyright-text { font-size: 0.85em; color: #999; }
-        .social-icons { display: flex; gap: 20px; }
-        .social-icons a { color: #999; font-size: 1.4em; transition: color 0.3s ease, transform 0.3s ease; }
-        .social-icons a:hover { color: var(--pink-accent); transform: translateY(-3px); }
+
+        .copyright-text {
+            font-size: 0.85em;
+            color: #999;
+            text-align: center;
+            flex-grow: 1; /* Permite que ocupe o espaço disponível no meio */
+            padding: 0 20px; /* Adiciona padding para evitar que encoste nos elementos laterais */
+        }
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            font-size: 2.2em;
+            /* Já estará à direita por ser o último item no flex container e justify-content: space-between */
+        }
+        .social-icons a {
+            color: #999; /* Cor base dos ícones */
+            transition: color 0.3s ease, transform 0.3s ease; /* Transições para hover */
+        }
+        .social-icons a:hover {
+            color: var(--pink-accent); /* Cor ao passar o mouse */
+            transform: translateY(-3px); /* Efeito de levantar */
+        }
         
         /* RESPONSIVIDADE */
         @media (max-width: 768px) {
-            .hamburger-menu { display: block; }
+            .hamburger-menu { display: none; } /* Removido para simplificar se o js n controlar */
             .nav-links { display: none; flex-direction: column; width: 100%; background-color: rgba(26, 26, 26, 0.98); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: absolute; top: 70px; left: 0; padding: 20px 0; border-bottom: 1px solid rgba(255, 0, 136, 0.1); }
             .nav-links.active { display: flex; }
             .nav-links li { margin: 15px 0; text-align: center; width: 100%; }
-            .footer-top, .footer-bottom { flex-direction: column; text-align: center; }
-            .footer-top { gap: 30px; margin-bottom: 30px; }
-            .footer-bottom { gap: 20px; }
-            .copyright-text { order: 2; }
-            .social-icons { order: 1; }
+            
+            /* Ajustes para o footer em telas menores */
+            .footer-content-wrapper {
+                flex-direction: column; /* Empilha os elementos verticalmente */
+                justify-content: center; /* Centraliza itens quando empilhados */
+                gap: 20px; /* Aumenta o espaçamento entre itens empilhados */
+                text-align: center; /* Centraliza qualquer texto dentro dos filhos */
+            }
+            .footer-brand {
+                order: 1; /* Logo e nome primeiro */
+                justify-content: center; /* Centraliza o logo+texto */
+            }
+            .copyright-text {
+                order: 2; /* Copyright no meio */
+                flex-grow: 0; /* Remove o flex-grow quando empilhado */
+                padding: 0; /* Remove padding para melhor centralização */
+            }
+            .social-icons {
+                order: 3; /* Ícones sociais por último */
+                justify-content: center; /* Centraliza os ícones */
+            }
+
             .about-hero-content h1 { font-size: 2.8em; }
             .section-container h2 { font-size: 2.2em; }
             .soul-formula { flex-direction: column; gap: 20px; }
@@ -263,12 +354,7 @@
         </nav>
     </header>
     <main>
-        <section class="about-hero">
-            <div class="about-hero-content">
-                <h1>Por Trás da AURA: Alma no Silício</h1>
-                <p>Somos a intersecção da tecnologia e das artes liberais. Construímos mais do que sistemas; criamos experiências que tocam a alma.</p>
-            </div>
-        </section>
+
         <section class="section-container animate-on-scroll">
             <h2 class="animate-on-scroll">Nossa Filosofia</h2>
             <p class="philosophy-intro animate-on-scroll">Na AURA, acreditamos que a tecnologia sem a humanidade é sem alma, e que a arte sem a tecnologia é impotente. Nossa jornada começa onde essas duas ruas se encontram, inspirada pela beleza de uma fonte caligráfica e pela perfeição de uma linha de código. Não construímos apenas software. Nós construímos experiências. Elegância, romance e humanidade não são acessórios; são o nosso núcleo.</p>
@@ -277,7 +363,11 @@
                 <span class="formula-plus">+</span>
                 <div class="formula-item"> <i class="fas fa-heart"></i> <span>Coração (Design)</span> </div>
                 <span class="formula-equals">=</span>
-                <div class="formula-item"> <i class="fas fa-sparkles"></i> <span>Alma.</span> </div>
+                <div class="formula-item">
+                    <i class="fas fa-star"></i>
+                    <span>Alma</span>
+                    <span class="tagline">Impacto e Inovação</span>
+                </div>
             </div>
             <div class="philosophy-grid">
                 <div class="philosophy-card animate-on-scroll"> <i class="fas fa-heartbeat icon-circle"></i> <h3>Nós Construímos Sistemas com Alma</h3> <p>Cada interface, cada interação, deve ter um propósito e uma sensação. Se não emociona, não está pronto.</p> </div>
@@ -292,20 +382,23 @@
         </section>
         <section class="section-container professor-info animate-on-scroll">
             <h2 class="animate-on-scroll">Nosso Mentor</h2>
-            <i class="fas fa-chalkboard-teacher animate-on-scroll"></i>
+            <img src="../Aura/assets/imgs/equipe/ari.png" alt=""id="modalProfileImg" class="aura-modal-profile-img">
             <h3 class="animate-on-scroll">Ari Teixeira</h3>
             <p class="animate-on-scroll">Agradecemos ao nosso dedicado professor, Ari Teixeira, por sua valiosa orientação e inspiração contínua, que são fundamentais para a AURA ir além do "bom o suficiente" e buscar a excelência.</p>
         </section>
     </main>
     <footer class="main-footer">
         <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand"> <img src="assets/logo.png" alt="AURA Logo" class="footer-logo-img"> <span class="gradient-text">AURA</span> </div>
-                <nav class="footer-nav"> <a href="index.html">Home</a> <a href="portifolio.html">Projetos</a> <a href="about.html">Sobre Nós</a> <a href="#">Contato</a> </nav>
-            </div>
-            <div class="footer-bottom">
+            <div class="footer-content-wrapper">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="AURA Logo" class="footer-logo-img">
+                    <span class="gradient-text">AURA</span>
+                </div>
                 <p class="copyright-text">&copy; 2025 AURA. Inovação e Alma em Cada Linha de Código.</p>
-                <div class="social-icons"> <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a> <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a> </div>
+                <div class="social-icons">
+                    <a href="https://github.com/equipeaura" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/auraequipe/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </footer>

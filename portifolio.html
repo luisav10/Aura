@@ -64,37 +64,62 @@
         .pink-ray { position: absolute; background-color: var(--pink-accent); opacity: 0.1; z-index: -1; transform-origin: center; pointer-events: none; }
         .ray-1 { width: 500px; height: 3px; top: 10%; left: 60%; transform: rotate(45deg); animation: animateRay 10s infinite alternate ease-in-out; }
         .ray-2 { width: 300px; height: 2px; bottom: 15%; left: 5%; transform: rotate(-30deg); animation: animateRay 9s infinite alternate-reverse ease-in-out; animation-delay: 2s; }
-        
+
         /* ANIMAÇÕES GERAIS */
         @keyframes rotateRing { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         @keyframes floatOrb { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(40px, -40px) scale(1.1); } 100% { transform: translate(0, 0) scale(1); } }
         @keyframes animateRay { 0% { transform: scaleX(0) rotate(var(--angle, 45deg)); opacity: 0; } 50% { opacity: 0.1; } 100% { transform: scaleX(1.5) rotate(var(--angle, 45deg)); opacity: 0; } }
         @keyframes slide-down { from { transform: translateY(-100%); } to { transform: translateY(0); } }
         @keyframes fade-in-up { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
-        .main-footer { background-color: transparent; color: var(--text-color); padding: 60px 5%; margin-top: 80px; border-top: 1px solid rgba(255, 0, 136, 0.15); }
-        .footer-container { max-width: 1200px; margin: 0 auto; }
-        .footer-top, .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-        .footer-top { margin-bottom: 40px; }
-        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 30px; }
-        .footer-brand { display: flex; align-items: center; gap: 12px; }
+
+        /* FOOTER ATUALIZADO */
+        .main-footer {
+            background-color: transparent;
+            color: var(--text-color);
+            padding: 60px 5%;
+            margin-top: 80px;
+            /* Adiciona a linha divisória aqui */
+            border-top: 1px solid rgba(255, 0, 136, 0.15); /* Cor da linha */
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between; /* Espaça a logo, copyright e ícones */
+            align-items: center; /* Alinha verticalmente todos os itens (logo, copyright, ícones) */
+            flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+            gap: 20px; /* Espaçamento entre os itens quando quebram a linha */
+        }
+        .footer-brand { /* Este é o nosso elemento da logo agora */
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
         .footer-logo-img { width: 45px; }
         .footer-brand .gradient-text { font-size: 2em; }
-        .footer-nav { display: flex; gap: 30px; }
-        .footer-nav a { color: var(--text-color); text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
-        .footer-nav a:hover { color: var(--pink-accent); }
-        .copyright-text { font-size: 0.85em; color: #999; }
-        .social-icons { display: flex; gap: 20px; }
-        .social-icons a { color: #999; font-size: 1.4em; transition: color 0.3s ease, transform 0.3s ease; }
+        .copyright-text {
+            font-size: 0.85em;
+            color: #999;
+            text-align: center; /* Centraliza o texto do copyright */
+            flex-grow: 1; /* Permite que o copyright ocupe o espaço necessário para centralizar */
+            flex-basis: 0; /* Ajuda o flex-grow a distribuir o espaço uniformemente */
+            min-width: 200px; /* Garante que o copyright tenha um tamanho mínimo */
+        }
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+        .social-icons a { color: #999; font-size: 2em; transition: color 0.3s ease, transform 0.3s ease; }
         .social-icons a:hover { color: var(--pink-accent); transform: translateY(-3px); }
-        
+
         /* === ESTILOS DO CONTEÚDO 'PROJETOS' === */
         .portfolio-hero { text-align: center; padding: 60px 20px; display: flex; align-items: center; justify-content: center; }
         .portfolio-hero-content { background-color: rgba(26, 26, 26, 0.55); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); padding: 40px; max-width: 800px; animation: fade-in-up 1s var(--animation-curve) backwards; }
         .portfolio-hero-content h1 { font-family: var(--font-heading); font-size: 3.5em; color: var(--pink-accent); margin-bottom: 15px; text-shadow: 0 0 15px rgba(255, 0, 136, 0.7); font-weight: 700; }
         .portfolio-hero-content p { font-family: var(--font-body); font-size: 1.3em; color: var(--light-pink); margin: 0 auto; max-width: 80%; }
-        
+
         .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; padding: 50px 5%; max-width: 1300px; margin: 0 auto; }
-        
+
         /* HOVER CARD DE PROJETO */
         .project-item {
             background-color: var(--card-bg);
@@ -105,14 +130,14 @@
             cursor: pointer;
             transition: transform 0.4s var(--animation-curve), box-shadow 0.4s var(--animation-curve), border-color 0.4s var(--animation-curve);
             border: 1px solid var(--border-color);
-            position: relative; 
+            position: relative;
         }
         .project-item:not(.coming-soon):hover {
             transform: translateY(-10px);
             border-color: rgba(255, 255, 255, 0.3);
             box-shadow: 0 15px 35px rgba(0,0,0,0.5), 0 0 15px rgba(255, 0, 136, 0.15);
         }
-        
+
         /* === ESTILOS ATUALIZADOS PARA PROJETOS "EM BREVE" (SEMPRE VISÍVEL) === */
         .project-item.coming-soon {
             cursor: default;
@@ -158,7 +183,7 @@
             background-color: rgba(13, 13, 13, 0.5);
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
         }
-        
+
         .project-image-container { width: 100%; height: 200px; overflow: hidden; }
         .project-image-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
         .project-item:not(.coming-soon):hover .project-image-container img { transform: scale(1.05); }
@@ -203,11 +228,24 @@
             .nav-links { display: none; flex-direction: column; width: 100%; background-color: rgba(26, 26, 26, 0.98); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: absolute; top: 70px; left: 0; padding: 20px 0; border-bottom: 1px solid rgba(255, 0, 136, 0.1); }
             .nav-links.active { display: flex; }
             .nav-links li { margin: 15px 0; text-align: center; }
-            .footer-top, .footer-bottom { flex-direction: column; text-align: center; }
-            .modal-body { flex-direction: column; }
-            .modal-left-column, .modal-right-column { border: none; }
-            .modal-left-column { flex: 0 0 auto; }
-            .modal-image { height: 250px; }
+
+            /* Ajustes para o rodapé em telas menores */
+            .footer-container {
+                flex-direction: column; /* Volta a organizar verticalmente */
+                align-items: center; /* Centraliza o conteúdo no geral */
+                gap: 15px; /* Reduz o espaçamento */
+            }
+            .footer-brand, .copyright-text, .social-icons {
+                width: 100%; /* Ocupam a largura total */
+                text-align: center; /* Centraliza o texto */
+                justify-content: center; /* Centraliza ícones */
+            }
+            .copyright-text {
+                order: 2; /* Garante que o copyright fique no meio na versão mobile */
+            }
+            .social-icons {
+                order: 3; /* Garante que os ícones fiquem por último na versão mobile */
+            }
         }
     </style>
 </head>
@@ -247,17 +285,14 @@
 
     <footer class="main-footer animate-on-scroll">
         <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand"><img src="assets/logo.png" alt="AURA Logo" class="footer-logo-img"><span class="gradient-text">AURA</span></div>
-                <nav class="footer-nav">
-                    <a href="index.html">Home</a><a href="portifolio.html">Projetos</a><a href="about.html">Sobre Nós</a><a href="#">Contato</a>
-                </nav>
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="AURA Logo" class="footer-logo-img">
+                <span class="gradient-text">AURA</span>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright-text">&copy; 2025 AURA. Inovação e Alma em Cada Linha de Código.</p>
-                <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
+            <p class="copyright-text">&copy; 2025 AURA. Inovação e Alma em Cada Linha de Código.</p>
+            <div class="social-icons">
+                <a href="https://github.com/equipeaura" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/auraequipe/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
@@ -290,7 +325,7 @@
             // --- LÓGICA DE ANIMAÇÃO DE SCROLL ---
             const animatedElements = document.querySelectorAll('.animate-on-scroll');
             const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
-            
+
             const elementObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -299,25 +334,25 @@
                     }
                 });
             }, observerOptions);
-            
+
             animatedElements.forEach(item => {
                 elementObserver.observe(item);
             });
-            
+
             // --- CARREGAMENTO DOS PROJETOS ---
             async function carregarProjetos() {
                 try {
                     const response = await fetch('settings.json');
                     const data = await response.json();
                     projetosData = data.projetos;
-                    gerarProjetosNaPagina();
+                    generarProjetosNaPagina();
                 } catch (error) {
                     console.error('Erro ao carregar os projetos:', error);
                     grid.innerHTML = '<p style="color: var(--light-pink); text-align: center;">Não foi possível carregar os projetos. Tente novamente mais tarde.</p>';
                 }
             }
 
-            function gerarProjetosNaPagina() {
+            function generarProjetosNaPagina() {
                 grid.innerHTML = '';
                 projetosData.forEach((projeto, index) => {
                     const card = document.createElement('div');
@@ -361,7 +396,7 @@
                             </div>
                         `;
                     }
-                    
+
                     card.innerHTML = cardContent;
                     grid.appendChild(card);
                     elementObserver.observe(card);
@@ -371,7 +406,7 @@
             // --- LÓGICA DO MODAL ---
             function abrirModal(index) {
                 const projeto = projetosData[index];
-                if (projeto.coming_soon) return; 
+                if (projeto.coming_soon) return;
 
                 document.getElementById('modal-title').textContent = projeto.nome;
                 document.getElementById('modal-image').innerHTML = `<img src="${projeto.foto}" alt="${projeto.nome}" onerror="this.onerror=null;this.src='assets/imgs/Portifolio/placeholder.webp';">`;

@@ -64,26 +64,26 @@
       "id": "luisa-vera",
       "nome": "Luisa Vera",
       "cargo": "Direção",
-      "foto": "assets/imgs/equipe/LuisaVera.png",
-      "github": "https://github.com/luisavera",
+      "foto": "assets/imgs/equipe/luisavera.jpeg",
+      "github": "https://github.com/luisav10",
       "sobre": "Líder visionária com foco em estratégia de produto e inovação. Apaixonada por unir design e tecnologia para criar soluções que impactam positivamente a vida das pessoas.",
       "ingressou": "2025-06-15",
       "redes_sociais": {
         "linkedin": "https://linkedin.com/in/luisavera",
-        "instagram": "https://instagram.com/luisavera"
+        "instagram": "https://instagram.com/qyluisa"
       }
     },
     {
       "id": "luisa-venturi",
       "nome": "Luisa Venturi",
       "cargo": "Direção",
-      "foto": "assets/imgs/equipe/luisaventuri.png",
-      "github": "https://github.com/luisaventuri",
+      "foto": "assets/imgs/equipe/luisaventuri.jpeg",
+      "github": "https://github.com/luiventt",
       "sobre": "Especialista em operações e gestão de projetos. Garante que a visão da AURA se transforme em realidade, mantendo a equipe alinhada e os projetos no prazo com excelência.",
       "ingressou": "2025-06-20",
       "redes_sociais": {
         "linkedin": "https://linkedin.com/in/luisaventuri",
-        "instagram": null
+        "instagram": "https://instagram.com/venturiluii"
       }
     },
     {
@@ -96,7 +96,7 @@
       "ingressou": "2025-06-10",
       "redes_sociais": {
         "linkedin": "https://linkedin.com/in/joaoaugusto",
-        "github": "https://github.com/joaoaugusto"
+        "instagram": "https://instagram.com/joaoaugusto"
       }
     },
     {
@@ -104,12 +104,12 @@
       "nome": "Gabrielly Oliveira",
       "cargo": "UI/UX Designer",
       "foto": "assets/imgs/equipe/gaby.jfif",
-      "github": null,
+      "github": "https://github.com/gabrielly",
       "sobre": "A alma criativa por trás das interfaces da AURA. Focada em criar experiências de usuário intuitivas, bonitas e memoráveis, sempre com um toque humano.",
       "ingressou": "2025-06-01",
       "redes_sociais": {
         "linkedin": "https://linkedin.com/in/gabriellyoliveira",
-        "instagram": "https://instagram.com/gabyoliveira"
+        "instagram": "https://instagram.com/gaby_.yyx"
       }
     },
     {
@@ -122,20 +122,20 @@
       "ingressou": "2025-06-22",
       "redes_sociais": {
         "linkedin": "https://linkedin.com/in/guilhermesilvestre",
-        "instagram": null
+        "instagram": "https://instagram.com/guilherme.silvestre"
       }
     },
     {
       "id": "maria-silva",
-      "nome": "Maria",
+      "nome": "Maria Eliza",
       "cargo": "Desenvolvedora Back-end",
-      "foto": "assets/imgs/equipe/maria.png",
+      "foto": "assets/imgs/equipe/mariaeliza.jpeg",
       "github": "https://github.com/mariasilva",
       "sobre": "Especialista em APIs e bancos de dados, garantindo que a lógica do sistema seja segura, rápida e confiável. Peça fundamental da nossa infraestrutura.",
       "ingressou": "2025-06-15",
       "redes_sociais": {
-        "linkedin": null,
-        "instagram": null
+        "linkedin": "https://linkedin.com/in/anajulia",
+        "instagram": "https://instagram.com/mah.prado29"
       }
     },
     {
@@ -143,32 +143,32 @@
       "nome": "Ana Julía",
       "cargo": "Analista de QA",
       "foto": "assets/imgs/equipe/anajulia.jfif",
-      "github": null,
+      "github": "https://github.com/anajulia",
       "sobre": "Nossos olhos para a qualidade. Responsável por garantir que cada produto lançado pela AURA seja livre de bugs e atenda aos mais altos padrões de excelência.",
       "ingressou": "2025-06-01",
       "redes_sociais": {
         "linkedin": "https://linkedin.com/in/anajulia",
-        "instagram": null
+        "instagram": "https://instagram.com/yuri_pleyer"
       }
     },
     {
       "id": "rafael-costa",
       "nome": "Rafael",
       "cargo": "Engenheiro DevOps",
-      "foto": "assets/imgs/equipe/rafael.png",
+      "foto": "assets/imgs/equipe/rafael.jpeg",
       "github": "https://github.com/rafaelcosta",
       "sobre": "O mestre da automação e da infraestrutura. Garante que nossos sistemas estejam sempre no ar, escalando de forma eficiente e com segurança máxima.",
       "ingressou": "2025-06-11",
       "redes_sociais": {
         "linkedin": "https://linkedin.com/in/rafaelcosta",
-        "instagram": null
+        "instagram": "https://instagram.com/rafaelcosta"
       }
     },
     {
       "id": "joao-victor",
       "nome": "João Victor",
       "cargo": "Desenvolvedor Mobile",
-      "foto": "assets/imgs/equipe/joaovictor.png",
+      "foto": "assets/imgs/equipe/joaovictor.jpeg",
       "github": "https://github.com/joaovictor",
       "sobre": "Transforma nossas ideias em aplicativos fluidos e responsivos para iOS e Android. Focado em performance e experiência nativa.",
       "ingressou": "2025-06-05",
@@ -177,20 +177,35 @@
         "instagram": "https://instagram.com/joaovictor"
       }
     },
+        {
+      "id": "nicoly",
+      "nome": "Nicoly",
+      "cargo": "Desenvolvedor Mobile",
+      "foto": "assets/imgs/equipe/nicoly.jpeg",
+      "github": "https://github.com/nicoly",
+      "sobre": "Transforma nossas ideias em aplicativos fluidos e responsivos para iOS e Android. Focado em performance e experiência nativa.",
+      "ingressou": "2025-06-05",
+      "redes_sociais": {
+        "linkedin": "https://linkedin.com/in/nicoly",
+        "instagram": "https://instagram.com/_nihmunhoz"
+      }
+    },
     {
       "id": "enzo-bueno",
       "nome": "Enzo Bueno",
       "cargo": "Cientista de Dados",
-      "foto": "assets/imgs/equipe/enzo.png",
+      "foto": "assets/imgs/equipe/enzo.jpeg",
       "github": "https://github.com/enzobueno",
       "sobre": "Extrai insights valiosos de grandes volumes de dados. Ajuda a AURA a tomar decisões inteligentes e a criar produtos com base em evidências.",
       "ingressou": "2025-06-20",
       "redes_sociais": {
-        "linkedin": null,
-        "instagram": null
+        "linkedin": "https://linkedin.com/in/nicoly",
+        "instagram": "https://instagram.com/ezno_machado"
       }
     }
+    
   ]
+  
 
 
   
