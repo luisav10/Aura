@@ -66,7 +66,7 @@
         .pink-ray { position: absolute; background-color: var(--pink-accent); opacity: 0.1; z-index: -1; transform-origin: center; pointer-events: none; }
         .ray-1 { width: 500px; height: 3px; top: 10%; left: 60%; transform: rotate(45deg); animation: animateRay 10s infinite alternate ease-in-out; }
         .ray-2 { width: 300px; height: 2px; bottom: 15%; left: 5%; transform: rotate(-30deg); animation: animateRay 9s infinite alternate-reverse ease-in-out; animation-delay: 2s; }
-        
+
         /* ANIMAÇÕES GERAIS */
         @keyframes rotateRing { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         @keyframes floatOrb { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(40px, -40px) scale(1.1); } 100% { transform: translate(0, 0) scale(1); } }
@@ -80,11 +80,11 @@
         .about-hero-content { z-index: 1; max-width: 900px; padding: 40px; background-color: rgba(26, 26, 26, 0.55); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); animation: fade-in-up 1s var(--animation-curve) 0.2s backwards; }
         .about-hero-content h1 { font-family: var(--font-heading); font-size: 3.8em; color: var(--pink-accent); margin-bottom: 20px; text-shadow: 0 0 20px rgba(255, 0, 136, 0.7); font-weight: 700; line-height: 1.2; }
         .about-hero-content p { font-family: var(--font-body); font-size: 1.25em; color: var(--light-pink); margin: 0 auto; max-width: 85%; }
-        
+
         .section-container { max-width: 1200px; margin: 80px auto; padding: 50px 5%; background-color: rgba(26, 26, 26, 0.4); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border-radius: 20px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 0, 136, 0.2); }
         .section-container h2 { font-family: var(--font-heading); font-size: 2.8em; color: var(--pink-accent); text-align: center; margin-bottom: 30px; position: relative; font-weight: 700; }
         .section-container h2::after { content: ''; display: block; width: 80px; height: 4px; background: var(--aura-gradient); margin: 15px auto 0; border-radius: 2px; }
-        
+
         .philosophy-intro { font-size: 1.15em; line-height: 1.8; color: var(--text-color); margin-bottom: 50px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; }
         .philosophy-intro strong { color: var(--light-pink); }
         .soul-formula { display: flex; justify-content: center; align-items: center; gap: 25px; margin: 70px auto; padding: 35px; background: linear-gradient(45deg, rgba(255, 0, 136, 0.1), transparent); border-radius: 25px; border: 1px solid var(--pink-accent); box-shadow: 0 0 35px rgba(255, 0, 136, 0.4); max-width: 900px; flex-wrap: wrap; }
@@ -107,7 +107,7 @@
         }
         .formula-item:hover i { transform: scale(1.15); }
         .formula-plus, .formula-equals { font-size: 3em; color: var(--pink-accent); font-weight: 700; margin: 0 15px; font-family: var(--font-heading); }
-        
+
         /* NOVO ESTILO PARA A FRASE "Impacto e Inovação" */
         .formula-item .tagline {
             font-size: 0.6em; /* Ainda menor */
@@ -136,7 +136,7 @@
         .philosophy-card:hover .icon-circle { transform: scale(1.1); color: var(--light-pink); }
         .philosophy-card h3 { font-family: var(--font-heading); font-size: 1.6em; color: var(--text-color); margin-bottom: 15px; font-weight: 700; }
         .philosophy-card p { font-size: 0.95em; color: var(--text-color); line-height: 1.7; flex-grow: 1; }
-        
+
         /* EQUIPE - NOVO ESTILO */
         .team-grid {
             display: grid;
@@ -199,11 +199,11 @@
         .professor-info i { font-size: 3.5em; color: var(--pink-accent); margin-bottom: 15px; }
         .professor-info h3 { font-family: var(--font-heading); font-size: 1.8em; color: var(--pink-accent); margin-bottom: 10px; font-weight: 700; }
         .professor-info p { font-size: 1.1em; color: var(--text-color); max-width: 700px; margin: 0 auto; }
-        
+
         /* ANIMAÇÃO DE SCROLL */
         .animate-on-scroll { opacity: 0; transform: translateY(40px); transition: opacity 0.8s var(--animation-curve), transform 0.8s var(--animation-curve); }
         .animate-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
-        
+
         /* FOOTER */
         .main-footer {
             background-color: transparent;
@@ -236,8 +236,8 @@
             gap: 12px;
             /* Já estará à esquerda por ser o primeiro item no flex container */
         }
-        .footer-logo-img { width: 100px; height: auto; }
-        .footer-brand .gradient-text { font-size: 2em; font-family: var(--font-heading); font-weight: 700; }
+        .footer-logo-img { width: 65px; height: auto; }
+        .footer-brand .gradient-text { font-size: 1.5em; font-family: var(--font-heading); font-weight: 700; }
 
         .copyright-text {
             font-size: 0.85em;
@@ -260,38 +260,92 @@
             color: var(--pink-accent); /* Cor ao passar o mouse */
             transform: translateY(-3px); /* Efeito de levantar */
         }
-        
+
         /* RESPONSIVIDADE */
         @media (max-width: 768px) {
-            .hamburger-menu { display: none; } /* Removido para simplificar se o js n controlar */
-            .nav-links { display: none; flex-direction: column; width: 100%; background-color: rgba(26, 26, 26, 0.98); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: absolute; top: 70px; left: 0; padding: 20px 0; border-bottom: 1px solid rgba(255, 0, 136, 0.1); }
-            .nav-links.active { display: flex; }
+            /* Adicionado ou modificado para o menu hambúrguer */
+            .navbar {
+                justify-content: space-between; /* Garante que o hambúrguer e outros elementos se separem */
+            }
+            .logo-link {
+                display: none; /* Oculta a logo no mobile */
+            }
+            .hamburger-menu {
+                display: block; /* Mostra o hambúrguer */
+                order: -1; /* Move o hambúrguer para a esquerda */
+                margin-right: auto; /* Garante que ele empurre os outros elementos para a direita */
+            }
+            .nav-links {
+                display: none; /* Esconde a navegação padrão */
+                flex-direction: column;
+                width: 100%;
+                background-color: rgba(26, 26, 26, 0.98);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                position: absolute;
+                top: 70px; /* Ajuste conforme a altura do seu cabeçalho */
+                left: 0;
+                padding: 20px 0;
+                border-bottom: 1px solid rgba(255, 0, 136, 0.1);
+            }
+            .nav-links.active {
+                display: flex; /* Mostra a navegação quando a classe 'active' está presente */
+            }
             .nav-links li { margin: 15px 0; text-align: center; width: 100%; }
-            
+
             /* Ajustes para o footer em telas menores */
             .footer-content-wrapper {
-                flex-direction: column; /* Empilha os elementos verticalmente */
-                justify-content: center; /* Centraliza itens quando empilhados */
-                gap: 20px; /* Aumenta o espaçamento entre itens empilhados */
-                text-align: center; /* Centraliza qualquer texto dentro dos filhos */
+                flex-direction: row; /* Volta para linha para logo e ícones */
+                justify-content: space-between; /* Empurra logo para esquerda, ícones para direita */
+                align-items: center; /* Alinha verticalmente logo e ícones */
+                flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+                gap: 15px; /* Espaçamento entre os elementos quando quebrarem */
+                padding-bottom: 20px; /* Espaço para o copyright abaixo */
             }
             .footer-brand {
                 order: 1; /* Logo e nome primeiro */
-                justify-content: center; /* Centraliza o logo+texto */
+                justify-content: flex-start; /* Alinha a logo à esquerda */
+                margin-right: auto; /* Empurra os outros elementos para a direita */
             }
             .copyright-text {
-                order: 2; /* Copyright no meio */
-                flex-grow: 0; /* Remove o flex-grow quando empilhado */
+                order: 3; /* Copyright por último */
+                width: 100%; /* Ocupa a largura total para centralizar */
+                text-align: center; /* Centraliza o texto */
                 padding: 0; /* Remove padding para melhor centralização */
+                margin-top: 20px; /* Adiciona um espaço acima do copyright */
             }
             .social-icons {
-                order: 3; /* Ícones sociais por último */
-                justify-content: center; /* Centraliza os ícones */
+                order: 2; /* Ícones sociais no meio, à direita */
+                justify-content: flex-end; /* Alinha os ícones à direita */
+                margin-left: auto; /* Empurra para a direita */
             }
 
             .about-hero-content h1 { font-size: 2.8em; }
             .section-container h2 { font-size: 2.2em; }
             .soul-formula { flex-direction: column; gap: 20px; }
+
+            /* ALTERAÇÕES AQUI PARA O MODAL NO MOBILE */
+            .aura-modal-content {
+                width: 95%; /* Aumenta um pouco a largura para usar mais espaço */
+                max-height: 90vh; /* Limita a altura máxima para que ele caiba na tela */
+                overflow-y: auto; /* Adiciona scroll se o conteúdo for muito longo */
+                padding: 1.5rem; /* Reduz um pouco o padding para mais espaço */
+                margin: 20px; /* Adiciona margem para que não encoste nas bordas da tela */
+            }
+
+            .aura-modal-close-button {
+                left: 15px; /* Move para a esquerda */
+                right: auto; /* Remove a propriedade right */
+                top: 15px; /* Mantém no topo */
+            }
+
+            .modal-grid-container {
+                grid-template-columns: 1fr; /* Coloca tudo em uma única coluna */
+                text-align: center; /* Centraliza o texto */
+            }
+            .aura-modal-links {
+                justify-content: center; /* Centraliza os botões/ícones sociais */
+            }
         }
         @media (max-width: 480px) {
             .about-hero-content h1 { font-size: 2.2em; }
@@ -312,7 +366,16 @@
         .aura-modal-close-button { color: #aaa; position: absolute; top: 15px; right: 25px; font-size: 28px; font-weight: bold; transition: color 0.3s ease, transform 0.3s ease; z-index: 2; }
         .aura-modal-close-button:hover, .aura-modal-close-button:focus { color: var(--pink-accent); transform: scale(1.2); cursor: pointer; }
         .modal-profile-container { text-align: center; }
-        .aura-modal-profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 5px solid var(--pink-accent); margin-bottom: 20px; box-shadow: 0 0 25px rgba(255, 0, 136, 0.5); }
+        /* Renomeado id para evitar duplicidade */
+        #memberModalProfileImg, .team-member-card .profile-img, #professorImg {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--pink-accent);
+            margin-bottom: 20px;
+            box-shadow: 0 0 25px rgba(255, 0, 136, 0.5);
+        }
         .aura-modal-name { font-family: var(--font-heading); font-size: 2.2em; color: var(--text-color); margin-bottom: 0; line-height: 1.2; }
         .aura-modal-cargo { font-family: var(--font-body); font-size: 1.1em; color: var(--light-pink); margin-bottom: 0.5rem; letter-spacing: 1px; text-transform: uppercase; }
         .aura-modal-ingressou { font-size: 0.85em; color: #888; margin-bottom: 1.5rem; font-style: italic; }
@@ -355,6 +418,14 @@
     </header>
     <main>
 
+        <section class="about-hero">
+            <div class="about-hero-content animate-on-scroll">
+                <h1>Somos a AURA</h1>
+                <p>Nascida da paixão por unir código e emoção, somos a AURA. Um estúdio de desenvolvimento que transcende o convencional. Cada linha de código que escrevemos é pensada para tocar, inspirar e causar um impacto duradouro. Não construímos apenas softwares; **construímos legados**.
+                </p>
+            </div>
+        </section>
+
         <section class="section-container animate-on-scroll">
             <h2 class="animate-on-scroll">Nossa Filosofia</h2>
             <p class="philosophy-intro animate-on-scroll">Na AURA, acreditamos que a tecnologia sem a humanidade é sem alma, e que a arte sem a tecnologia é impotente. Nossa jornada começa onde essas duas ruas se encontram, inspirada pela beleza de uma fonte caligráfica e pela perfeição de uma linha de código. Não construímos apenas software. Nós construímos experiências. Elegância, romance e humanidade não são acessórios; são o nosso núcleo.</p>
@@ -382,7 +453,7 @@
         </section>
         <section class="section-container professor-info animate-on-scroll">
             <h2 class="animate-on-scroll">Nosso Mentor</h2>
-            <img src="../Aura/assets/imgs/equipe/ari.png" alt=""id="modalProfileImg" class="aura-modal-profile-img">
+            <img src="../Aura/assets/imgs/equipe/ari.png" alt="Foto de Ari Teixeira" id="professorImg" class="aura-modal-profile-img">
             <h3 class="animate-on-scroll">Ari Teixeira</h3>
             <p class="animate-on-scroll">Agradecemos ao nosso dedicado professor, Ari Teixeira, por sua valiosa orientação e inspiração contínua, que são fundamentais para a AURA ir além do "bom o suficiente" e buscar a excelência.</p>
         </section>
@@ -408,7 +479,7 @@
             <span class="aura-modal-close-button">&times;</span>
             <div class="modal-grid-container">
                 <div class="modal-profile-container">
-                    <img src="" alt="Foto de Perfil" id="modalProfileImg" class="aura-modal-profile-img">
+                    <img src="" alt="Foto de Perfil" id="memberModalProfileImg" class="aura-modal-profile-img">
                 </div>
                 <div class="modal-info-container">
                     <h2 id="modalName" class="aura-modal-name"></h2>
@@ -431,7 +502,7 @@
             // --- LÓGICA DE ANIMAÇÃO DE SCROLL APRIMORADA ---
             const animatedElements = document.querySelectorAll('.animate-on-scroll');
             const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
-            
+
             const elementObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach((entry, index) => {
                     if (entry.isIntersecting) {
@@ -443,14 +514,14 @@
                     }
                 });
             }, observerOptions);
-            
+
             animatedElements.forEach(item => {
                 elementObserver.observe(item);
             });
 
 
             // --- LÓGICA DA PÁGINA: EQUIPE DINÂMICA E MODAL ---
-            
+
             let settingsData = null; // Cache para os dados do JSON
 
             async function initPage() {
@@ -459,7 +530,7 @@
                     console.error("Não foi possível carregar os dados da equipe.");
                     return;
                 }
-                
+
                 populateTeamGrid(data.equipe);
                 setupModal(data.equipe);
             }
@@ -481,7 +552,7 @@
                 const teamGridContainer = document.getElementById('team-grid-container');
                 if (!teamGridContainer) return;
 
-                teamGridContainer.innerHTML = ''; 
+                teamGridContainer.innerHTML = '';
 
                 equipe.forEach((member, index) => {
                     const memberCard = document.createElement('div');
@@ -502,9 +573,9 @@
             function setupModal(equipe) {
                 const modal = document.getElementById('memberModal');
                 if (!modal) return;
-                
+
                 const closeButton = modal.querySelector('.aura-modal-close-button');
-                
+
                 document.getElementById('team-grid-container').addEventListener('click', (event) => {
                     const card = event.target.closest('.team-member-card');
                     if (card) {
@@ -515,21 +586,22 @@
                 });
 
                 closeButton.addEventListener('click', () => closeModal(modal));
-                modal.addEventListener('click', (event) => { 
+                modal.addEventListener('click', (event) => {
                     if (event.target === modal) closeModal(modal);
                 });
-                window.addEventListener('keydown', (event) => { 
+                window.addEventListener('keydown', (event) => {
                     if (event.key === 'Escape' && modal.classList.contains('visible')) closeModal(modal);
                 });
             }
 
             function openModal(member, modal) {
-                modal.querySelector('#modalProfileImg').src = member.foto;
-                modal.querySelector('#modalProfileImg').alt = `Foto de ${member.nome}`;
+                // Seleciona a imagem dentro do modal pelo seu ID específico
+                modal.querySelector('#memberModalProfileImg').src = member.foto;
+                modal.querySelector('#memberModalProfileImg').alt = `Foto de ${member.nome}`;
                 modal.querySelector('#modalName').textContent = member.nome;
                 modal.querySelector('#modalCargo').textContent = member.cargo;
                 modal.querySelector('#modalSobre').textContent = member.sobre;
-                
+
                 if (member.ingressou) {
                     const dataIngresso = new Date(member.ingressou);
                     const options = { year: 'numeric', month: 'long' };
@@ -547,8 +619,8 @@
                 }
 
                 const socialsContainer = modal.querySelector('#modalSocials');
-                socialsContainer.innerHTML = ''; 
-                
+                socialsContainer.innerHTML = '';
+
                 if (member.redes_sociais) {
                     const socialMap = { linkedin: 'fab fa-linkedin', instagram: 'fab fa-instagram', github: 'fab fa-github' };
                     for (const [rede, url] of Object.entries(member.redes_sociais)) {
@@ -565,15 +637,24 @@
                 }
 
                 modal.style.display = 'flex';
-                setTimeout(() => { modal.classList.add('visible'); }, 10); 
+                setTimeout(() => { modal.classList.add('visible'); }, 10);
             }
 
             function closeModal(modal) {
                 modal.classList.remove('visible');
                 setTimeout(() => { modal.style.display = 'none'; }, 400);
             }
-            
+
             initPage();
+
+            // --- MENU HAMBÚRGUER ---
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
         });
     </script>
     <script src="https://cdn.userway.org/widget.js" data-account="Jeu6LtkLAp"></script>

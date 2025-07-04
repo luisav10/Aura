@@ -146,8 +146,8 @@ a.team-avatar-item.more-avatars:hover{background-color:var(--light-pink)}
 .footer-container{max-width:1200px;margin:0 auto}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-top:30px}
 .footer-brand{display:flex;align-items:center;gap:12px}
-.footer-logo-img{width:100px}
-.footer-brand .gradient-text{font-size:2em}
+.footer-logo-img{width:65px}
+.footer-brand .gradient-text{font-size:1.5em}
 .copyright-text{font-size:.85em;color:#999;flex-grow:1;text-align:center;}
 .social-icons{display:flex;gap:20px}
 .social-icons a{color:#999;font-size:2.2em;transition:color .3s ease,transform .3s ease}
@@ -155,15 +155,70 @@ a.team-avatar-item.more-avatars:hover{background-color:var(--light-pink)}
 
 /* Media Queries (Responsividade) */
 @media (max-width:1024px){.pillars-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:768px){.main-header{padding:8px 5%}
-.logo{font-size:1.6em}
-.nav-links{position:absolute;top:60px;left:0;width:100%;flex-direction:column;background-color:rgba(13,13,13,0.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:10px 0;display:none}.nav-links.active{display:flex}
-.hamburger-menu{display:block}
-.hero-section{flex-direction:column-reverse;min-height:auto;padding:30px 5%;text-align:center}.hero-content{text-align:center}
-.hero-content h1{font-size:2.5em}
-.hero-content p{font-size:1.2em}
-.cta-buttons{justify-content:center}
-.footer-bottom{flex-direction:column;text-align:center;gap:20px}.copyright-text{order:unset;width:auto}}
+@media (max-width:768px){
+    .main-header{padding:8px 5%}
+    .navbar{
+        flex-direction: row;
+        justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+        align-items: center;
+    }
+    .hamburger-menu{
+        display:block;
+        order: 0; /* Garante que o hambúrguer seja o primeiro */
+        margin-right: 15px; /* Adiciona um pequeno espaçamento à direita do hambúrguer */
+    }
+    .logo-link {
+        display: none; /* Oculta completamente a logo na versão mobile */
+    }
+    .logo{font-size:1.6em}
+    .nav-links{
+        position:absolute;
+        top:60px;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        background-color:rgba(13,13,13,0.95);
+        backdrop-filter:blur(10px);
+        -webkit-backdrop-filter:blur(10px);
+        padding:10px 0;
+        display:none; /* Oculto por padrão */
+        border-top: 1px solid rgba(255,0,136,0.1); /* Opcional: Adiciona uma borda no topo do menu aberto */
+    }
+    .nav-links.active{display:flex}
+    .nav-links li {
+        margin: 10px 0; /* Ajusta a margem para itens de menu vertical */
+    }
+    .main-header.appear .hamburger-menu{opacity:1;transform:translateY(0)}
+    .hero-section{flex-direction:column-reverse;min-height:auto;padding:30px 5%;text-align:center}
+    .hero-content{text-align:center}
+    .hero-content h1{font-size:2.5em}
+    .hero-content p{font-size:1.2em}
+    .cta-buttons{justify-content:center}
+    
+    /* --- Ajustes para o Rodapé Mobile --- */
+    .footer-bottom{
+        flex-direction: row; /* Volta para linha para alinhar logo e social icons na mesma linha */
+        flex-wrap: wrap; /* Permite quebrar linha se não houver espaço */
+        justify-content: space-between; /* Espaça logo e ícones */
+        align-items: center; /* **Alinha verticalmente logo e ícones sociais** */
+        gap: 15px; /* Reduz o espaçamento entre os itens */
+    }
+    .footer-brand{
+        flex-grow: 1; /* Permite que a marca ocupe espaço à esquerda */
+        justify-content: flex-start; /* Alinha a marca à esquerda */
+    }
+    .social-icons{
+        /* Remove o order: -1; para que ele fique na mesma linha da logo */
+        justify-content: flex-end; /* Alinha os ícones à direita */
+        margin-top: 0; /* Garante que não haja margem superior extra */
+    }
+    .copyright-text{
+        order: 1; /* Move o copyright para a próxima linha */
+        text-align: center; /* **Centraliza o texto de copyright** */
+        margin-top: 20px; /* Adiciona espaço acima do copyright para separá-lo */
+        width: 100%; /* Garante que o texto ocupe a largura total e fique em uma nova linha */
+    }
+}
 @media (max-width:480px)
 {.hero-content h1{font-size:2em}.hero-content p{font-size:1em}.sign-up-button,.learn-more-button{padding:12px 22px;font-size:.9em}
 .pillars-grid{grid-template-columns:1fr}}
@@ -186,15 +241,15 @@ a.team-avatar-item.more-avatars:hover{background-color:var(--light-pink)}
 
     <header class="main-header">
         <nav class="navbar">
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
             <a href="index.html" class="logo-link">
                 <div class="logo logo-wrapper">
                     <img src="assets/logo.png" alt="AURA Logo" class="logo-img">
                     <span class="gradient-text">AURA</span>
                 </div>
             </a>
-            <div class="hamburger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-item active">HOME</a></li>
                 <li><a href="portifolio.html" class="nav-item">PROJETOS</a></li>
@@ -386,5 +441,5 @@ a.team-avatar-item.more-avatars:hover{background-color:var(--light-pink)}
         });
     </script>
     <script src="https://cdn.userway.org/widget.js" data-account="Jeu6LtkLAp"></script>
-</body>
+    </body>
 </html>
