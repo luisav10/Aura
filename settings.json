@@ -28,33 +28,63 @@
       "site": "https://personaltec-25d3c.web.app"
     },
     {
-      "nome": "Gestão Quantum",
-      "foto": "assets/imgs/Portifolio/placeholder.webp",
-      "descricao_curta": "Solução empresarial com foco em eficiência e segurança.",
-      "tags": ["Enterprise", "Backend"],
-      "descricao": "",
-      "repositorio": "https://github.com/aura/quantum",
-      "site": "https://aura.dev/quantum",
-      "coming_soon": true
+      "nome": "Sistema de Serviços",
+      "foto": "assets/imgs/Portifolio/sistemaserviços.jpeg",
+      "descricao_curta": "Organiza todos os serviços feitos para a Etec DPM.",
+      "tags": ["Escola", "Otimização"],
+      "descricao": "O portífolio da Equipe Aura que contêm todos os programas criados para ajudar a nossa escola Etec DPM.",
+      "repositorio": "https://github.com/equipeaura/Portifolio.git",
+      "site": "https://equipeaura.github.io/Portifolio/",
+      "coming_soon": false
     },
     {
-      "nome": "Interface Holográfica",
-      "foto": "assets/imgs/Portifolio/placeholder.webp",
-      "descricao_curta": "Explorando a realidade aumentada para interações futuristas.",
-      "tags": ["AR", "Design", "Inovação"],
-      "descricao": "Um projeto experimental que explora o futuro das interfaces, utilizando realidade aumentada para criar interações holográficas imersivas e nunca antes vistas.",
-      "repositorio": "https://github.com/aura/ar-hologram",
-      "site": "https://aura.dev/ar-hologram",
-      "coming_soon": true
+      "nome": "Achados e Perdidos",
+      "foto": "assets/imgs/Portifolio/achadoseperdidos.jpeg",
+      "descricao_curta": "Desenvolvido para facilitar o processo de encontrar seu item perdido na escola.",
+      "tags": ["Prático", "Simples", "Inovação"],
+      "descricao": "Um projeto que explora problemas reais das escolas e propõe uma solução fácil para ajudar tanto os alunos, quanto a equipe escolar.",
+      "repositorio": "https://github.com/equipeaura/Achados-e-Perdidos.git",
+      "site": "https://equipeaura.github.io/Achados-e-Perdidos/",
+      "coming_soon": false
     },
     {
-      "nome": "Game Dev - Elysium",
-      "foto": "assets/imgs/Portifolio/placeholder.webp",
-      "descricao_curta": "Um mundo imersivo onde a narrativa encontra a tecnologia.",
-      "tags": ["Games", "3D", "Unreal Engine"],
-      "descricao": "Mergulhe em Elysium, um mundo de fantasia épico onde a narrativa profunda encontra a tecnologia de ponta da Unreal Engine 5 para criar uma experiência de jogo inesquecível.",
-      "repositorio": "https://github.com/aura/elysium-game",
-      "site": "https://elysiumgame.com",
+      "nome": "Revista Aura",
+      "foto": "assets/imgs/portifolio/revistaaura.jpeg",
+      "descricao_curta": "Mantêm os alunos informados sobre notícias importantes de um jeito prático.",
+      "tags": ["Artigos", "Lúdico", "Conhecimento"],
+      "descricao": "Uma revista que desperta o interesse de alunos á buscar conhecimentos sobre o ambiente escolar de forma lúdica.",
+      "repositorio": "https://github.com/luisav10/Jornal-aura.git",
+      "site": "https://luisav10.github.io/Jornal-aura/",
+      "coming_soon": false
+    },
+     {
+      "nome": "Revista Aura",
+      "foto": "assets/imgs/portifolio/placeholder.webp",
+      "descricao_curta": "Mantêm os alunos informados sobre notícias importantes de um jeito prático.",
+      "tags": ["Artigos", "Lúdico", "Conhecimento"],
+      "descricao": "Uma revista que desperta o interesse de alunos á buscar conhecimentos sobre o ambiente escolar de forma lúdica.",
+      "repositorio": "https://github.com/luisav10/Jornal-aura.git",
+      "site": "https://luisav10.github.io/Jornal-aura/",
+      "coming_soon": true
+    },
+     {
+      "nome": "Revista Aura",
+      "foto": "assets/imgs/portifolio/placeholder.webp",
+      "descricao_curta": "Mantêm os alunos informados sobre notícias importantes de um jeito prático.",
+      "tags": ["Artigos", "Lúdico", "Conhecimento"],
+      "descricao": "Uma revista que desperta o interesse de alunos á buscar conhecimentos sobre o ambiente escolar de forma lúdica.",
+      "repositorio": "https://github.com/luisav10/Jornal-aura.git",
+      "site": "https://luisav10.github.io/Jornal-aura/",
+      "coming_soon": true
+    },
+      {
+      "nome": "Revista Aura",
+      "foto": "assets/imgs/portifolio/placeholder.webp",
+      "descricao_curta": "Mantêm os alunos informados sobre notícias importantes de um jeito prático.",
+      "tags": ["Artigos", "Lúdico", "Conhecimento"],
+      "descricao": "Uma revista que desperta o interesse de alunos á buscar conhecimentos sobre o ambiente escolar de forma lúdica.",
+      "repositorio": "https://github.com/luisav10/Jornal-aura.git",
+      "site": "https://luisav10.github.io/Jornal-aura/",
       "coming_soon": true
     }
   ],
