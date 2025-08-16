@@ -58,14 +58,14 @@
       "coming_soon": false
     },
      {
-      "nome": "Revista Aura",
-      "foto": "assets/imgs/portifolio/placeholder.webp",
-      "descricao_curta": "Mantêm os alunos informados sobre notícias importantes de um jeito prático.",
-      "tags": ["Artigos", "Lúdico", "Conhecimento"],
-      "descricao": "Uma revista que desperta o interesse de alunos á buscar conhecimentos sobre o ambiente escolar de forma lúdica.",
-      "repositorio": "https://github.com/luisav10/Jornal-aura.git",
-      "site": "https://luisav10.github.io/Jornal-aura/",
-      "coming_soon": true
+      "nome": "Biblioteca Etec Darcy",
+      "foto": "assets/imgs/Portifolio/biblioteca.png",
+      "descricao_curta": "Um sistema de empréstimo de livros escolares.",
+      "tags": ["Livros", "Escola", "Otimização"],
+      "descricao": "Com esse projeto, beneficiamos tanto os alunos, quantos a equipe escolar com a facilidade na hora de emprestar livros.",
+      "repositorio": "https://github.com/equipeaura/Biblioteca.git",
+      "site": "https://equipeaura.github.io/Biblioteca/",
+      "coming_soon": false
     },
      {
       "nome": "Revista Aura",
